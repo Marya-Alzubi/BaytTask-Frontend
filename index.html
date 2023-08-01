@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="bayt,task,html,css,javascript" />
+    <meta name="description" content="This is a task fot Bayt company" />
+    <meta name="author" content="Marya Alzu'bi" />
+    <title>Bayt Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" id="navbar">
+        <div class="leftSec">
+          <div class="logo"><i class="fa-solid fa-house-chimney"></i> Logo</div>
+          <div class="menu">
+            <ul>
+              <li class="m-show search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#navbar">Price</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a id="dropDown" href="#"
+                  >DropDown <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <div>
+                  <a href="#">page 1</a>
+                  <a href="#">page 2</a>
+                  <a href="#">page 3</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa-solid fa-magnifying-glass m-hide search"></i>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner">
+      <img src="/images/bannerImage.jpg" alt="desert banner" />
+      <button>Talentra</button>
+    </section>
+    <section class="team" id="team">
+      <h1>OUR TEAM</h1>
+      <p>meet the team - our office rats:</p>
+      <div class="cards-container">
+        <!-- will render the team data from script.js file -->
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="work-container">
+        <div>
+          <h1>Our Work</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+        <!-- will render the work cards data from script.js file -->
+      </div>
+      <i class="fa-solid fa-plus" id="contact-toggle"></i>
+    </section>
+
+    <section class="contact show-grid" id="contact">
+      <div>
+        <h1>Contact Us</h1>
+        <h2>Address</h2>
+        <p>swing by for a cup of coffee, or whatever.</p>
+        <a>
+          <span><i class="fa-solid fa-location-dot"></i></span>Amman, Jordan
+        </a>
+        <a href="tel:962-79-0000000">
+          <span><i class="fa-solid fa-phone"></i></span>+962 79 0000000
+        </a>
+        <a href="mailto: abc@example.com">
+          <i class="fa-regular fa-envelope"></i>test@test.com
+        </a>
+      </div>
+      <div>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" required />
+          </div>
+          <div>
+            <div>
+              <input type="checkbox" id="subscribe" name="subscribe" checked />
+              <label for="subscribe">I like it!</label>
+            </div>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div id="scroll-up"><i class="fa-solid fa-circle-up fa-2x"></i></div>
+      <div class="follow">Follow Us</div>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/Baytcom/"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/Baytcom" target="_blank" class="icon-link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.bayt.com/en/company/google-1903804/"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/baytcom/"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/bayt.com/"
+          target="_blank"
+          class="icon-link"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </footer>
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
