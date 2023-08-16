@@ -1,4 +1,4 @@
-# BaytTask-Frontend
+# Talentera Project
 
 This task has been written using: HTML, CSS, JavaScript
 
